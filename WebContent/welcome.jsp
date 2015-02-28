@@ -4,28 +4,78 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<title>
-	
-</title>
-<meta name="viewport" content="width=device-width" />
-
-<script src="../../js/jquery-1.11.1.js"></script>
-<script src="../../js/jquery.validate.js"></script>
-<script src="../../js/bootstrap.js"></script>
-<script src="../../js/jquery.dataTables.min.js"></script>
-<script src="../../js/dataTables.bootstrap.js"></script>
-
-<link href="../../css/bootstrap.css" rel="stylesheet" />
-<link href="../../css/bootstrap-responsive.css" rel="stylesheet" />
-<link href="../../css/cs-outreach.css" rel="stylesheet" />
-
-</head>
 <body>
-<h1>Hello</h1>
-	<form id="pageform">
-														
-	</form>
+    <div class="row">
+        <h3>Search Event To Add This Student</h3>
+        <p>find event from following fields and add student to that event.</p>
+    </div>
+    <div class="updateForm">
+        <div class="row">
+            <hr class="col-md-6" />
+        </div>
 
+        <div class="form-updateEvent">
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="">Enter Event Type:</label>
+                
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Course Name:</label>
+                                 </div>
+            </div>
+
+            <div class="row">
+                <hr class="col-md-6" />
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="">Instructor Name:</label>
+                    <input type="text" class="form-control" id="Instructor" runat="server" />
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="">Location:</label>
+                    <input type="text" class="form-control" id="Location" runat="server" />
+                </div>
+            </div>
+
+            <div class="row">
+                <hr class="col-md-6" />
+            </div>
+
+        </div>
+        <div class="row">
+            <hr class="col-md-6" />
+        </div>
+    </div>
+
+    <div class="row">
+        
+           
+                <table id="DataEventsTable" class="table table-striped table-bordered" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td style="display: none"></td>
+                            <td>Name</td>
+                            <td>Event_Type</td>
+                            <td>Course</td>
+                            <!--<td>Skills</td>-->
+                            <td>Start Date</td>
+                            <td>Start Time</td>
+                            <td>End Date</td>
+                            <td>End Time</td>
+                            <td>Location</td>
+                            <td>Add Student</td>
+                 
+
+                        </tr>
+                    </thead>
+         
+            </table>
+              
+        
+          
+    </div>
 </body>
-</html>
+  
